@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@EventBusSubscriber(modid = Starshield.MODID, bus = EventBusSubscriber.Bus.MOD)
+// @EventBusSubscriber(modid = Starshield.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class Config {
-    private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+    // private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
     // config entries
 
-    static final ModConfigSpec SPEC = BUILDER.build();
+    // static final ModConfigSpec SPEC = BUILDER.build();
 
     /*private static boolean validateItemName(final Object obj) {
         return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));

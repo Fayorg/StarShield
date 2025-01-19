@@ -1,6 +1,9 @@
 package me.fayorg.minecraft.starshield;
 
 import com.mojang.logging.LogUtils;
+import me.fayorg.minecraft.starshield.blockentities.StarshieldBlockEntities;
+import me.fayorg.minecraft.starshield.blocks.StarshieldBlocks;
+import me.fayorg.minecraft.starshield.items.StarshieldItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -38,6 +41,10 @@ public class Starshield {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Starshield(IEventBus modEventBus, ModContainer modContainer) {
+
+        StarshieldItems.ITEMS.register(modEventBus);
+        StarshieldBlocks.BLOCKS.register(modEventBus);
+        StarshieldBlockEntities.BLOCK_ENTITIES.register(modEventBus);
 
         // Config will be used later
         // modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
