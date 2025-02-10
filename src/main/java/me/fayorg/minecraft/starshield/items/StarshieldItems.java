@@ -12,7 +12,7 @@ public class StarshieldItems {
 
     public static final DeferredHolder<Item, Item> SATELLITE_BUS = ITEMS.register("satellite_bus", () -> new Item(new Item.Properties()));
     public static final DeferredHolder<Item, Item> ANTENNA = ITEMS.register("antenna", () -> new Item(new Item.Properties()));
-    public static final DeferredHolder<Item, Item> SOLAR_PANELS = ITEMS.register("solar_panels", () -> new Item(new Item.Properties()));
+    public static final DeferredHolder<Item, Item> SOLAR_PANELS = ITEMS.register("solar_panels", () -> new SatelliteComponent(new Item.Properties(), SatelliteComponentType.SATELLITE_ENERGY, 1));
     public static final DeferredHolder<Item, Item> BATTERY = ITEMS.register("battery", () -> new Item(new Item.Properties()));
     public static final DeferredHolder<Item, Item> THRUSTER = ITEMS.register("thruster", () -> new Item(new Item.Properties()));
     public static final DeferredHolder<Item, Item> SATELLITE = ITEMS.register("satellite", () -> new Item(new Item.Properties()));

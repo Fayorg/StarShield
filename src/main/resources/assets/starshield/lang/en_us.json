@@ -1,6 +1,11 @@
 {
   "itemGroup.starshield": "StarShield",
+
   "item.starshield.antenna": "Satellite Dish",
   "item.starshield.thruster": "Satellite Thruster",
-  "item.starshield.solar_panels": "Solar Panels"
+  "item.starshield.solar_panels": "Solar Panels",
+
+  "block.starshield.satellite_workstation": "Satellite Workstation",
+
+  "container.starshield.satellite_workstation": "Satellite Workstation"
 }
